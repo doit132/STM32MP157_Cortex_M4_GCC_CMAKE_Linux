@@ -1,0 +1,9 @@
+ADD_SUBDIRECTORY(${CMAKE_CURRENT_LIST_DIR}/Device/ST/STM32MP1xx ${LIBRARY_OUTPUT_PATH}/Drivers/CMSIS/Device/ST/STM32MP1xx)
+
+# Add the Common/inc directory to the project include list
+TARGET_INCLUDE_DIRECTORIES(
+    ${PROJECT_NAME}
+    PUBLIC
+    ${CMAKE_CURRENT_LIST_DIR}
+    ${CMAKE_CURRENT_LIST_DIR}/Include
+)
