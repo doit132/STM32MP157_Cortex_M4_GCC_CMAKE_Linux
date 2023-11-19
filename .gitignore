@@ -3,6 +3,4 @@ Build/
 projects/*/.cache/
 .cache/
 compile_commands.json
-Middlewares/FreeRTOS
-Middlewares/UCOS3
 
