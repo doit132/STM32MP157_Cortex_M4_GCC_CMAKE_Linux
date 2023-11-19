@@ -25,3 +25,12 @@ if [ -f "compile_commands.json" ]; then
 fi
 
 make -j8
+
+# 遍历源文件夹中的文件
+for file in ./*.hex; do
+    if [ -f "$file" ]; then
+        # 复制文件到目标文件夹
+        cp "$file" /mnt/d/Users/Desktop
+    fi
+done
+
